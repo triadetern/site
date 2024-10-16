@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeRN - Projetos</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/output.css">
+    <style>
+        .bg-dourado { background-color: #CD9B50; } /* Dourado */
+        .text-branco { color: #FCFFFB; } /* Branco esverdeado claro */
+        .text-cinza-escuro { color: #3C3E3B; } /* Cinza escuro */
+        .bg-rosado { background-color: #FFFAF9; } /* Branco levemente rosado */
+        .text-escuro { color: #3D3F3C; } /* Cinza escuro (quase igual) */
+        .border-dourado { border-color: #CD9B50; } /* Dourado */
+        .border-dourado { border: 6px solid #CD9B50; /* Cor dourada */
+        }
+    </style>
+</head>
+<body class="bg-gray-800 text-white p-4">
+<header class="text-gray-800 p-4 bg-gray-800">
+    <nav class="container mx-auto flex justify-between items-center">
+        <img src="/logo/11.png" alt="TeRN" class="h-12">
+        <ul class="flex space-x-6">
+            <li><a href="/" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado">Início</a></li>
+            <li><a href="/quem-somos" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado">Quem Somos</a></li>
+            <li><a href="/projetos" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado">Serviços</a></li>
+            <li><a href="/contato" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado">Contato</a></li>
+        </ul>
+
+        <!-- Botão para alternar tema -->
+        <button id="theme-toggle" class="bg-dourado text-white py-2 px-4 rounded shadow-md focus:outline-none">
+            Modo Claro
+        </button>
+    </nav>
+</header>
+
+<!-- Nossa História -->
+<div class="bg-preto rounded-lg p-6 flex border-4 border-dourado mb-8" style="min-height: 300px; height: 100%;">
+    <img src="logo/11.png" alt="Nossa História" class="w-1/3 rounded-lg mr-4" style="object-fit: contain; max-height: 100%; max-width: 100%;">
+    <section id="historia" class="w-2/3 flex flex-col justify-center">
+        <h2 class="text-2xl font-bold mb-4">Nossa História</h2>
+        <p style="font-size: 1.125rem;">
+            A TeRN, fundada em 2012, é uma empresa especializada em telecomunicações, com experiência em projetos de telefonia IP, enlaces de rádio digital, IoT e LTE 250Mhz. Além disso, a empresa realiza manutenção de redes de cabos ópticos e swaps de operações de telefonia móvel, oferecendo uma gama de serviços altamente técnicos e essenciais para o setor.
+        </p>
+        <p style="font-size: 1.125rem;">
+            A TeRN também atende a demandas específicas de CFTV digital em ambientes hostis, projetos de contact center, e redes Wi-Fi para operações críticas. A consultoria em telecomunicações é outro pilar importante da empresa, que busca sempre soluções personalizadas e eficientes.
+        </p>
+        <p style="font-size: 1.125rem;">
+            Com mais de uma década de atuação, a TeRN se dedica a suprir necessidades complexas do mercado. Sua missão é oferecer soluções inovadoras e confiáveis, buscando sempre ser reconhecida como parceira de seus clientes. Os valores da empresa incluem parceria, sinergia e responsabilidade nas ações, fundamentais para a construção de um relacionamento sólido e de confiança.
+        </p>
+    </section>
+</div>
+
+<!-- Valores e Missão -->
+<div class="bg-preto rounded-lg p-6 flex flex-col border-4 border-dourado" style="min-height: 300px; height: 100%;">
+    <h2 class="text-2xl font-bold mb-4 text-center">Nossos Valores e Missão</h2>
+
+    <div class="w-full flex flex-col md:flex-row justify-between p-4">
+        <!-- Texto -->
+        <div class="w-full md:w-2/3 flex flex-col justify-center">
+            <h3 class="text-xl font-bold mb-4">Nossos Valores e Missão</h3>
+            <p class="text-lg leading-relaxed">
+                Acreditamos na integridade, no comprometimento, na inovação e na busca constante pela excelência. Esses valores norteiam todas as nossas ações e decisões, garantindo que cada solução oferecida esteja alinhada com o que há de melhor no mercado.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Nosso propósito é fornecer soluções de infraestrutura de redes que melhorem a conectividade e eficiência das empresas. Acreditamos que a infraestrutura de redes é o alicerce para o crescimento sustentável e a inovação nos negócios.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Trabalhamos para criar uma infraestrutura de rede que suporte os desafios do futuro, promovendo conexões mais rápidas, eficientes e seguras para empresas de diversos setores.
+            </p>
+        </div>
+        <!-- Imagem -->
+        <div class="w-full md:w-1/3 flex justify-center mt-4 md:mt-0">
+            <img src="logo/Valores1.png" alt="Nossos Valores e Missão" class="rounded-lg object-cover">
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="contato" class="bg-preto text-branco p-4 mt-8 text-center border-4 border-dourado">
+    <div class="container mx-auto">
+        <p><strong>Telefone:</strong> (83) 999 743 153</p>
+        <p><strong>Website:</strong> <a href="http://www.tern.com.br" class="text-dourado hover:underline">www.tern.com.br</a></p>
+        <p><strong>CNPJ:</strong> 14.066.341/0001-74</p>
+        <p><strong>Email:</strong> <a href="mailto:md@tern.com.br" class="text-dourado hover:underline">md@tern.com.br</a></p>
+    </div>
+    <p>&copy; 2024 TeRN - Tecnologia em Redes e Negócios</p>
+</footer>
+
+<!-- Script para alternar entre modo claro e escuro -->
+<script>
+    const toggleThemeButton = document.getElementById("theme-toggle");
+    const body = document.body;
+    const footer = document.getElementById("contato");
+
+    // Função para alternar tema
+    const toggleTheme = () => {
+        body.classList.toggle("bg-gray-800");
+        body.classList.toggle("text-white");
+        body.classList.toggle("bg-white");
+        body.classList.toggle("text-gray-800");
+
+        // Alterar cores no footer
+        footer.classList.toggle("bg-preto");
+        footer.classList.toggle("text-branco");
+        footer.classList.toggle("bg-white");
+        footer.classList.toggle("text-gray-800");
+
+        // Alternar texto do botão
+        if (body.classList.contains("bg-gray-800")) {
+            toggleThemeButton.textContent = "Modo Claro";
+        } else {
+            toggleThemeButton.textContent = "Modo Escuro";
+        }
+    };
+
+    // Evento de clique no botão para alternar tema
+    toggleThemeButton.addEventListener("click", toggleTheme);
+</script>
+
+</body>
+</html>

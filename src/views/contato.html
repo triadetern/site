@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeRN - Contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/output.css">
+    <style>
+        .bg-dourado { background-color: #CD9B50; } /* Dourado */
+        .text-branco { color: #FCFFFB; } /* Branco esverdeado claro */
+        .text-cinza-escuro { color: #3C3E3B; } /* Cinza escuro */
+        .bg-rosado { background-color: #FFFAF9; } /* Branco levemente rosado */
+        .text-escuro { color: #3D3F3C; } /* Cinza escuro (quase igual) */
+        .border-dourado { border-color: #CD9B50; } /* Dourado */
+        .border-dourado { border: 6px solid #CD9B50; /* Cor dourada */
+        }
+    </style>
+</head>
+<body class="bg-gray-800 text-white p-4 transition-colors duration-300" id="body">
+<header id="header" class="text-white p-4 bg-gray-800">
+    <nav class="container mx-auto flex justify-between items-center">
+        <!-- Logo da Empresa -->
+        <img src="/logo/11.png" alt="TeRN" class="h-12">
+
+        <ul class="flex space-x-6">
+            <li>
+                <a href="/" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Início</a>
+            </li>
+            <li>
+                <a href="/quem-somos" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Quem Somos</a>
+            </li>
+            <li>
+                <a href="/projetos" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Projetos</a>
+            </li>
+            <li>
+                <a href="/contato" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Contato</a>
+            </li>
+        </ul>
+
+        <!-- Botão de Modo Claro/Escuro -->
+        <button id="theme-toggle" class="bg-dourado text-white py-2 px-4 rounded shadow-md focus:outline-none">
+            Modo Claro
+        </button>
+    </nav>
+</header>
+
+<!-- Conteúdo da página -->
+
+<!-- Footer -->
+<footer id="contato" class="bg-preto text-cinza-branco p-4 mt-8 text-center border-4 border-dourado">
+    <div class="container mx-auto">
+        <p><strong>Telefone:</strong> (83) 999 743 153</p>
+        <p><strong>Website:</strong> <a href="http://www.tern.com.br" class="text-dourado hover:underline">www.tern.com.br</a></p>
+        <p><strong>CNPJ:</strong> 14.066.341/0001-74</p>
+        <p><strong>Email:</strong> <a href="mailto:md@tern.com.br" class="text-dourado hover:underline">md@tern.com.br</a></p>
+    </div>
+    <p>&copy; 2024 TeRN - Tecnologia em Redes e Negócios</p>
+</footer>
+
+<script>
+    const body = document.getElementById('body');
+    const themeToggleBtn = document.getElementById('theme-toggle');
+
+    themeToggleBtn.addEventListener('click', function() {
+        // Alterna entre o modo claro e escuro para o body
+        body.classList.toggle('bg-gray-800');
+        body.classList.toggle('text-white');
+        body.classList.toggle('bg-white');
+        body.classList.toggle('text-gray-800');
+
+        // Atualiza o texto do botão
+        if (body.classList.contains('bg-gray-800')) {
+            themeToggleBtn.textContent = 'Modo Claro';
+        } else {
+            themeToggleBtn.textContent = 'Modo Escuro';
+        }
+    });
+</script>
+
+</body>
+</html>

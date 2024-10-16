@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeRN - Catálogo de Serviços</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/output.css">
+    <style>
+        .bg-dourado { background-color: #CD9B50; } /* Dourado */
+        .text-branco { color: #FCFFFB; } /* Branco esverdeado claro */
+        .text-cinza-escuro { color: #3C3E3B; } /* Cinza escuro */
+        .bg-rosado { background-color: #FFFAF9; } /* Branco levemente rosado */
+        .text-escuro { color: #3D3F3C; } /* Cinza escuro (quase igual) */
+        .border-dourado { 
+            border-color: #CD9B50; /* Dourado */
+            border: 6px solid #CD9B50; /* Cor dourada */
+        }
+    </style>
+</head>
+<body class="bg-gray-800 text-white p-4 transition-colors duration-300" id="body">
+<header id="header" class="text-white p-4 bg-gray-800">
+    <nav class="container mx-auto flex justify-between items-center">
+        <!-- Logo da Empresa -->
+        <img src="/logo/11.png" alt="TeRN" class="h-12">
+
+        <ul class="flex space-x-6">
+            <li>
+                <a href="/" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Início</a>
+            </li>
+            <li>
+                <a href="/quem-somos" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Quem Somos</a>
+            </li>
+            <li>
+                <a href="/projetos" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Projetos</a>
+            </li>
+            <li>
+                <a href="/contato" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Contato</a>
+            </li>
+        </ul>
+
+        <!-- Botão de Modo Claro/Escuro -->
+        <button id="theme-toggle" class="bg-dourado text-white py-2 px-4 rounded shadow-md focus:outline-none">
+            Modo Claro
+        </button>
+    </nav>
+</header>
+
+    <main class="container mx-auto py-8">
+        <!-- Banner de Introdução -->
+        <section id="home" class="bg-preto text-branco p-10 rounded-lg shadow-lg mb-10 border-4 border-dourado">
+            <h2 class="text-3xl font-bold mb-2">Bem-vindo à TeRN</h2>
+            <p>Soluções de tecnologia e redes que transformam o seu negócio. Explore nossos projetos e conheça mais sobre nossos serviços especializados.</p>
+        </section>
+
+        <!-- Seção Quem Somos -->
+        <section id="quem-somos" class="bg-preto text-branco p-10 rounded-lg shadow-lg mb-10 border-4 border-dourado">
+            <h2 class="text-2xl font-bold mb-5 text-claro">Quem Somos</h2>
+            <p class="mb-4 text-claro">A TeRN é uma empresa de telecomunicações com expertise comprovada em projetos inovadores. Atuamos em áreas como:</p>
+            <ul class="list-disc list-inside mb-5 text-claro">
+                <li>Telefonia IP e infraestrutura de rádio digital terrestre.</li>
+                <li>Manutenção de redes de cabos óticos e swaps de operações.</li>
+                <li>Soluções IoT para ambientes industriais e LTE 250Mhz.</li>
+            </ul>
+            <p class="text-claro">Combinamos inovação e excelência técnica para fornecer resultados de alto impacto para nossos clientes.</p>
+        </section>
+
+        <!-- Seção Carrossel de Projetos -->
+       <!-- Seção Carrossel de Projetos -->
+<section id="projetos" class="bg-preto p-10 rounded-lg shadow-lg border-4 border-dourado">
+    <h2 class="text-2xl font-bold mb-5 text-white destaque-titulo">Serviços em Destaque</h2>
+    <div class="carousel-container relative">
+        <div id="carousel-images" class="w-full overflow-hidden">
+            <!-- Serviço 1 -->
+            <div class="carousel-item w-full flex items-center space-x-4">
+                <img class="w-1/2 rounded-lg shadow-md" src="servicos/InstalaçãodeSistemasdeComunicacao.jpeg" alt="Instalação de Sistemas de Comunicação">
+                <div class="w-1/2">
+                    <h3 class="text-xl font-bold text-white">Instalação de Sistemas de Comunicação</h3>
+                    <p class="text-white">Atuação para grandes empresas como Nokia Telecom, Tim e Justiça Federal, com a instalação de sistemas de comunicação e coordenação de equipes.</p>
+                </div>
+            </div>
+            <!-- Serviço 2 -->
+            <div class="carousel-item w-full flex items-center space-x-4 hidden border-4 border-dourado">
+                <img class="w-1/2 rounded-lg shadow-md" src="servicos/TrocaeRemanejamento.jpeg" alt="Troca e Remanejamento de Equipamentos">
+                <div class="w-1/2">
+                    <h3 class="text-xl font-bold text-white">Troca e Remanejamento de Equipamentos</h3>
+                    <p class="text-white">Realização de swaps de telefonia móvel, substituindo equipamentos antigos e remanejamento de torres para garantir a continuidade dos serviços.</p>
+                </div>
+            </div>
+            <!-- Serviço 3 -->
+            <div class="carousel-item w-full flex items-center space-x-4 hidden border-4 border-dourado">
+                <img class="w-1/2 rounded-lg shadow-md" src="servicos/Relatorio.jpeg" alt="Relatórios Técnicos e Projetos Provisórios">
+                <div class="w-1/2">
+                    <h3 class="text-xl font-bold text-white">Relatórios Técnicos e Projetos Provisórios</h3>
+                    <p class="text-white">Elaboração de relatórios técnicos após vistorias de campo e criação de projetos provisórios de instalação, oferecendo suporte técnico especializado.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn prev-btn absolute left-0 top-1/2 transform -translate-y-1/2 bg-cinza text-branco p-2" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-btn next-btn absolute right-0 top-1/2 transform -translate-y-1/2 bg-cinza text-branco p-2" onclick="nextSlide()">&#10095;</button>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-preto text-cinza-branco p-4 mt-8 text-center border-4 border-dourado">
+        <div class="container mx-auto">
+            <p><strong>Telefone:</strong> (83) 999 743 153</p>
+            <p><strong>Website:</strong> <a href="http://www.tern.com.br" class="text-dourado hover:underline">www.tern.com.br</a></p>
+            <p><strong>CNPJ:</strong> 14.066.341/0001-74</p>
+            <p><strong>Email:</strong> <a href="mailto:md@tern.com.br" class="text-dourado hover:underline">md@tern.com.br</a></p>
+        </div>
+        <p>&copy; 2024 TeRN - Tecnologia em Redes e Negócios</p>
+    </footer>
+
+    <!-- Script para o Carrossel e Alternância de Tema -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const intervalTime = 3000; // Tempo em milissegundos (3000ms = 3 segundos)
+        let intervalId;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('hidden', i !== index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Inicializa o primeiro slide
+        showSlide(currentSlide);
+
+        // Inicia o carrossel automático
+        intervalId = setInterval(nextSlide, intervalTime);
+
+        // Pausa o carrossel automático ao clicar nos botões
+        document.querySelector('.prev-btn').addEventListener('click', () => {
+            clearInterval(intervalId);
+            prevSlide();
+        });
+
+        document.querySelector('.next-btn').addEventListener('click', () => {
+            clearInterval(intervalId);
+            nextSlide();
+        });
+
+        // Alternância de tema claro/escuro
+const body = document.getElementById('body');
+const themeToggleBtn = document.getElementById('theme-toggle');
+const sections = document.querySelectorAll('section'); // Seleciona todas as seções
+const carouselTexts = document.querySelectorAll('.carousel-item h3, .carousel-item p'); // Seleciona os textos do carrossel
+const destaqueTitulo = document.querySelector('.destaque-titulo');
+
+themeToggleBtn.addEventListener('click', function() {
+    // Alterna entre o modo claro e escuro para o body
+    body.classList.toggle('bg-gray-800');
+    body.classList.toggle('text-white');
+    body.classList.toggle('bg-white');
+    body.classList.toggle('text-gray-800');
+
+    // Atualiza o texto do botão
+    if (body.classList.contains('bg-gray-800')) {
+        themeToggleBtn.textContent = 'Modo Claro';
+    } else {
+        themeToggleBtn.textContent = 'Modo Escuro';
+    }
+
+    // Alterna as cores das seções
+    sections.forEach(section => {
+        section.classList.toggle('text-branco'); // Muda a cor do texto das seções para o modo claro/escuro
+        section.classList.toggle('text-gray-800'); // Modo claro
+    });
+
+    // Alterna as cores do texto do carrossel
+    carouselTexts.forEach(text => {
+        text.classList.toggle('text-white'); // Muda para branco no modo escuro
+        text.classList.toggle('text-gray-800'); // Muda para cinza escuro no modo claro
+    });
+
+    // Alterna a cor do título "Serviços em Destaque"
+    destaqueTitulo.classList.toggle('text-white'); // Muda para branco no modo escuro
+    destaqueTitulo.classList.toggle('text-gray-800'); // Muda para cinza escuro no modo claro
+});
+    </script>
+</body>
+</html>

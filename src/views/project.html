@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeRN - Projetos</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/output.css">
+    <style>
+        .bg-dourado { background-color: #CD9B50; } /* Dourado */
+        .text-branco { color: #FCFFFB; } /* Branco esverdeado claro */
+        .text-cinza-escuro { color: #3C3E3B; } /* Cinza escuro */
+        .bg-rosado { background-color: #FFFAF9; } /* Branco levemente rosado */
+        .text-escuro { color: #3D3F3C; } /* Cinza escuro (quase igual) */
+        .border-dourado { border-color: #CD9B50; } /* Dourado */
+        .border-dourado { border: 6px solid #CD9B50; /* Cor dourada */
+        }
+    </style>
+</head>
+<body class="bg-gray-800 text-white p-4">
+<header id="header" class="text-white p-4 bg-gray-800">
+    <nav class="container mx-auto flex justify-between items-center">
+        <!-- Logo da Empresa -->
+        <img src="/logo/11.png" alt="TeRN" class="h-12">
+
+        <ul class="flex space-x-6">
+            <li>
+                <a href="/" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Início</a>
+            </li>
+            <li>
+                <a href="/quem-somos" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Quem Somos</a>
+            </li>
+            <li>
+                <a href="/projetos" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Projetos</a>
+            </li>
+            <li>
+                <a href="/contato" class="text-white font-semibold text-lg py-3 px-6 rounded shadow-md hover:bg-gray-700 hover:shadow-lg border-dourado" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">Contato</a>
+            </li>
+        </ul>
+
+        <!-- Botão de Modo Claro/Escuro -->
+        <button id="theme-toggle" class="bg-dourado text-white py-2 px-4 rounded shadow-md focus:outline-none">
+            Modo Claro
+        </button>
+    </nav>
+</header>
+
+
+<main class="container mx-auto py-8">
+    <!-- Título da Página -->
+<div class="text-center mb-10 border-4 border-dourado rounded-lg p-4">
+    <h2 class="text-4xl font-bold text-claro-600">Nossos Serviços</h2>
+    <p class="text-lg text-dourado-700 mt-4">Aqui estão alguns dos serviços mais recentes realizados pela TeRN, entregando soluções inovadoras para nossos clientes.</p>
+</div>
+
+
+
+    <!-- Lista de Projetos -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Projeto 1 - Parte 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden border-dourado">
+            <img src="servicos/InstalaçãodeSistemasdeComunicacao.jpeg" alt="Projeto 1" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold text-gray-600 mb-2">Instalação de Sistemas de Comunicação</h3>
+                <p class="text-gray-700 mb-4">Atuação para grandes empresas como Nokia Telecom, Tim, Cinte Telecomunicações, Codata e Justiça Federal.</p>
+                <p class="text-gray-700 mb-4"><strong>Atividades principais:</strong></p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li>Instalação de sistemas de comunicação.</li>
+                    <li>Coordenação de equipes para instalação de equipamentos.</li>
+                </ul>
+                <a href="#" class="text-blue-500 hover:underline">Saiba mais &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Projeto 1 - Parte 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden border-dourado">
+            <img src="servicos/TrocaeRemanejamento.jpeg" alt="Projeto 1" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold text-gray-600 mb-2">Troca e Remanejamento de Equipamentos</h3>
+                <p class="text-gray-700 mb-4"><strong>Atividades principais:</strong></p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li>Swap de telefonia móvel: substituição de equipamentos antigos e testes de qualidade.</li>
+                    <li>Remanejamento de torres (towers).</li>
+                </ul>
+                <a href="#" class="text-blue-500 hover:underline">Saiba mais &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Projeto 2 - Parte 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden border-dourado">
+            <img src="servicos/Relatorio.jpeg" alt="Projeto 2" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold text-gray-600 mb-2">Relatórios Técnicos e Projetos Provisórios</h3>
+                <p class="text-gray-700 mb-4"><strong>Serviços técnicos especializados, incluindo:</strong></p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li>Elaboração de relatórios técnicos após vistorias de campo (TSSR).</li>
+                    <li>Criação de Projetos Provisórios de Instalação (PPI).</li>
+                </ul>
+                <a href="#" class="text-blue-500 hover:underline">Saiba mais &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Projeto 2 - Parte 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden border-dourado">
+            <img src="servicos/Consultoria.jpeg" alt="Projeto 2" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold text-gray-600 mb-2">Consultoria para Projetos de Rede</h3>
+                <p class="text-gray-700 mb-4"><strong>Serviços técnicos especializados, incluindo:</strong></p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li>Consultoria para projetos de redes WAN estaduais.</li>
+                    <li>Site survey para redes Wi-Fi de precisão em grandes áreas.</li>
+                </ul>
+                <a href="#" class="text-blue-500 hover:underline">Saiba mais &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Projeto 3 - Parte 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden border-dourado">
+            <img src="servicos/Cabeamento.jpeg" alt="Projeto 3" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold text-gray-600 mb-2">Cabeamento Estruturado Metálico</h3>
+                <p class="text-gray-700 mb-4"><strong>Soluções personalizadas para necessidades não atendidas por outros provedores, como:</strong></p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li>Montagem de cabeamento estruturado metálico.</li>
+                    <li>Montagem de cabeamento estruturado ótico.</li>
+                </ul>
+                <a href="#" class="text-blue-500 hover:underline">Saiba mais &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Projeto 3 - Parte 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden border-dourado">
+            <img src="servicos/CFTV.jpeg" alt="Projeto 3" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold text-gray-600 mb-2">Instalações de TI e CFTV</h3>
+                <p class="text-gray-700 mb-4"><strong>Soluções personalizadas para necessidades não atendidas por outros provedores, como:</strong></p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li>Instalações de equipamentos de TI on-premise, como roteadores, firewalls e switches.</li>
+                    <li>Implementação de CFTV Digital em locais remotos ou com requisitos específicos de iluminação ou segurança.</li>
+                </ul>
+                <a href="#" class="text-blue-500 hover:underline">Saiba mais &rarr;</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer id="contato" class="bg-preto text-cinza-branco p-4 mt-8 text-center border-4 border-dourado">
+    <div class="container mx-auto">
+        <p><strong>Telefone:</strong> (83) 999 743 153</p>
+        <p><strong>Website:</strong> <a href="http://www.tern.com.br" class="text-dourado hover:underline">www.tern.com.br</a></p>
+        <p><strong>CNPJ:</strong> 14.066.341/0001-74</p>
+        <p><strong>Email:</strong> <a href="mailto:md@tern.com.br" class="text-dourado hover:underline">md@tern.com.br</a></p>
+    </div>
+    <p>&copy; 2024 TeRN - Tecnologia em Redes e Negócios</p>
+</footer>
+
+<script>
+    // Função para alternar entre tema claro e escuro
+    const toggleTheme = () => {
+        const body = document.body;
+        body.classList.toggle("bg-gray-800");
+        body.classList.toggle("text-white");
+        body.classList.toggle("bg-white");
+        body.classList.toggle("text-gray-800");
+
+      
+    };
+
+    // Adiciona o evento de clique ao botão
+    document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
+</script>
+</body>
+</html>

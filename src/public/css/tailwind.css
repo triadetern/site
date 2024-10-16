@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-branco-esverdeado {
+        background-color: #FCFFFB;
+    }
+    .bg-cinza-escuro {
+        background-color: #3C3E3B;
+    }
+    .bg-dourado {
+        background-color: #CD9B50;
+    }
+    .bg-cinza-escuro-2 {
+        background-color: #3D3F3C;
+    }
+    .bg-branco-rosado {
+        background-color: #FFFAF9;
+    }
+    .text-branco-rosado {
+        color: #FFFAF9;
+    }
+    .text-dourado {
+        color: #CD9B50;
+    }
+}
